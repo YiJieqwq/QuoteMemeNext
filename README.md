@@ -1,19 +1,29 @@
 # QuoteMemeNext
-# 基于Qfun的消息一键作图qq脚本
 
-🎉 基于全新架构的名言做图Next 🎉
-基于原作者沄,MySQLdisappoint的脚本"名言作图"进行底层重构与上层重写优化和拓展，在此特别鸣谢原作者。
+**English** | [中文](README.zh-CN.md)
 
-项目链接:https://github.com/YiJieqwq/QuoteMemeNext 基于mit协议开源
+> One-tap quote-image generator for QQ, built on QFun.
 
-默认值:允许指令调用，禁止他人调用，文字颜色纯白，背景颜色纯黑，渐变遮罩完全不透明且纯黑
+🎉 Quote Meme **Next**, rebuilt on a brand-new architecture 🎉
 
-使用方法：长按任意消息，点击“生成名言”即可生图。
+Rebuilt from the ground up on top of the original "名言作图" script by **沄** and **MySQLdisappoint** — lower layers refactored, upper layers rewritten, extended and optimized. Many thanks to the original authors.
 
-指令调用：在悬浮菜单开启“允许使用'/名言'指令作图”后，回复目标消息并仅发送 /名言，即可自动生成。可同时开启“允许他人使用”分享给其他人。
+Released under the MIT License. Repository: https://github.com/YiJieqwq/QuoteMemeNext
 
-支持格式：文本消息完美支持；图片消息长按生成正常，指令调用可能失效(受限环境运行，暂无更好解决方法)。
+## Defaults
 
-自定义样式：悬浮菜单中点击“配置名言做图各元素颜色”，可自由调整文字、背景及渐变遮罩。
+Command invocation allowed · invocation by others disabled · pure-white text · pure-black background · fully opaque pure-black gradient overlay.
 
-缓存机制:缓存的头像第一次使用后开始倒计时，十秒后删除。若该头像在倒计时期间又被调用，则清除计时器，重新开始十秒倒计时。
+## Usage
+
+**Generate an image:** long-press any message, then tap **"生成名言" (Generate Quote)**.
+
+**Generate via command:** enable *"Allow the `/名言` command to generate images"* in the floating menu, then reply to the target message and send only `/名言`. It generates automatically. *"Allow others to use"* can be enabled at the same time to share it with other people.
+
+**Supported formats:** text messages are fully supported. Long-press generation works for image messages; command invocation may fail there (running in a constrained environment — no better workaround for now).
+
+**Custom styles:** tap *"Configure quote image element colors"* in the floating menu to freely adjust text, background, and gradient overlay colors.
+
+## Avatar Cache
+
+A cached avatar starts a countdown after its first use and is deleted ten seconds later. If the same avatar is requested again during the countdown, the timer is cleared and the ten-second countdown restarts.
